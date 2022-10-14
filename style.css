@@ -3,20 +3,17 @@ body {
   background-size: auto;
   background-repeat: no-repeat;
 }
-p {
-  color: aliceblue;
-  position: relative;
-  display: none;
-}
 .wrapper_whole_header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-h1,
-h2,
-h3 {
+.intro_heading {
   color: rgb(0, 0, 0);
-  margin-right: 20rem;
+}
+
+.introduction {
+  width: 30rem;
+  font-family: "Trirong", serif;
 }
 .activate {
   display: block;
@@ -36,9 +33,11 @@ h3 {
   width: 3rem;
   height: 2rem;
   transition: 0.5s;
+  margin-top: 1rem;
   background-color: inherit;
-  color: whitesmoke;
+  color: rgb(0, 0, 0);
   font-size: x-large;
+  border: none;
 }
 .show_hide:hover {
   cursor: pointer;
@@ -58,13 +57,20 @@ h3 {
 a {
   text-decoration: none;
 }
+.display_image {
+  width: 20rem;
+  border-radius: 5%;
+  height: 18rem;
+  margin: 3rem 0.5rem 0 0;
+  background-color: rgb(255, 255, 255);
+}
 .nav_bar_links,
 .social_link {
   color: white;
   padding: 1rem;
   width: 86.5%;
 }
-a:hover {
+.nav_bar_links:hover {
   background-color: aliceblue;
   color: rgb(0 165 255);
 }
@@ -79,7 +85,7 @@ a:hover {
 }
 
 .active {
-  margin-left: -16rem;
+  margin-left: -19rem;
   transition: 0.5s;
 }
 .going_left {
@@ -90,15 +96,38 @@ a:hover {
   margin-top: 5rem;
 }
 .buttons_of_projects {
-  width: 100%;
+  width: 95%;
   display: grid;
   margin-left: 1rem;
   grid-template-columns: 46vw 46vw;
   grid-auto-rows: 5rem;
-  color: rgb(255, 255, 255);
+  background-color: #d4f6ff;
   font-size: xx-large;
   font-style: italic;
 }
 .anchor_of_project_buttons {
-    text-align: center;
+  margin: 10px;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.anchor_of_project_buttons:hover {
+  transform: translate3d(20px);
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.5s;
+  background-color: #2dd5ff;
+  color: aliceblue;
+}
+.small_project_heading {
+  text-align: center;
+  color: #000;
+}
+.blue_color {
+  color: rgb(0 153 231);
+}
+.project_showcase {
+  margin-top: 3rem;
 }
