@@ -74,6 +74,10 @@ a {
   background-color: aliceblue;
   color: rgb(0 165 255);
 }
+.social_link:hover {
+  background-color: aliceblue;
+  color: rgb(0 165 255);
+}
 .nav_div {
   display: flex;
   width: 100%;
