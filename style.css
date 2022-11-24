@@ -22,6 +22,7 @@ body {
 #profileImg {
   margin: 1rem;
   width: 8rem;
+  background-position: cover;
   height: 8rem;
   border-radius: 50%;
 }
@@ -99,24 +100,6 @@ a {
 .social_links {
   margin-top: 5rem;
 }
-.buttons_of_projects {
-  width: 95%;
-  display: grid;
-  margin-left: 1rem;
-  grid-template-columns: 46vw 46vw;
-  grid-auto-rows: 5rem;
-  background-color: #d4f6ff;
-  font-size: xx-large;
-  font-style: italic;
-}
-.anchor_of_project_buttons {
-  margin: 10px;
-  color: red;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-}
 .anchor_of_project_buttons:hover {
   transform: translate3d(20px);
   cursor: pointer;
@@ -125,13 +108,7 @@ a {
   background-color: #2dd5ff;
   color: aliceblue;
 }
-.small_project_heading {
-  text-align: center;
-  color: #000;
-}
+
 .blue_color {
   color: rgb(0 153 231);
-}
-.project_showcase {
-  margin-top: 3rem;
 }

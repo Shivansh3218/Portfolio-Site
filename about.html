@@ -29,6 +29,7 @@
         .nav_links {
             display: flex;
             gap: 2rem;
+            align-items: baseline;
         }
 
         .image {
@@ -65,7 +66,7 @@
 
         .top_heading {
             font-family: "Trirong", serif;
-             font-size: 4rem;
+            font-size: 4rem;
             font-weight: 1000;
             text-align: center;
             margin: -1rem 0 -1rem 0;
@@ -89,23 +90,35 @@
             letter-spacing: .5px;
             border: 0;
         }
-        .resume:hover{
+
+        .nav_bar_links{
+            text-decoration: none;
+            width: auto;
+            height: auto;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            box-shadow:olive 1px 1px 1px 0;
             cursor: pointer;
-            box-shadow: inset 300px 0 0 0 yellow ;
+            margin-left: 1rem;
+        }
+        .resume:hover {
+            cursor: pointer;
+            box-shadow: inset 300px 0 0 0 yellow;
             color: black;
             transition: 0.8s;
         }
-
     </style>
     <h1 class="top_heading">ABOUT <span class="Me">ME</span></h1>
     <header>
         <h1>Shivansh Rawat</h1>
         <div class="nav_links">
-            <a class="nav_bar_links" href="index.html"><i class="fa-solid fa-house-user"></i>&nbsp; Home</a>
-            <a class="nav_bar_links" href="https://www.blogger.com/blog/posts/1574833645143108735"><i
-                    class="fa-solid fa-blog"></i>&nbsp; Blogs</a>
-            <a href="contact.html">Contact Me</a>
-            <a class="nav_bar_links" href=""><i class="fa-solid fa-list-check"></i>&nbsp; Projects</a>
+            <a href="index.html"><button  class="nav_bar_links"><i class="fa-solid fa-house-user"></i>&nbsp; Home</button></a>
+            <a href="https://www.blogger.com/blog/posts/1574833645143108735">
+                <button  class="nav_bar_links"><i
+                    class="fa-solid fa-blog"></i>&nbsp; Blogs</button></a>
+            <a href="contact.html"><button  class="nav_bar_links">Contact Me</button></a>
+            <a  href=""><button  class="nav_bar_links"><i class="fa-solid fa-list-check"></i>&nbsp; Projects</button></a>
         </div>
     </header>
 
